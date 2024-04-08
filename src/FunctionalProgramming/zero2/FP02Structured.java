@@ -15,7 +15,7 @@ public class FP02Structured {
         System.out.println(doublesNumbers);
         System.out.println("---");
         List<String> courses = List.of("Java","SD","DSA","Algo","compitative coding");
-//        List<String > answer = courses.stream().map(x->x.length()).collect(Collectors.toList());
+//       List<String > answer = courses.stream().map(x->x.length()).collect(Collectors.toList());
         courses.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
         System.out.println("---");
         courses.stream().sorted(Comparator.comparing(str -> str.length())).forEach(System.out::println);
@@ -62,8 +62,8 @@ public class FP02Structured {
     }
 
     private static int squareAndAdd(List<Integer> numbers) {
-        return numbers.stream().reduce(0,(x,y)->x+(y*y));
-//        return numbers.stream().map(x->x*x).reduce(0,Integer::sum);
+        //return numbers.stream().reduce(0,(x,y)->x+(y*y));
+          return numbers.stream().map(x->x*x).reduce(0,Integer::sum);
     }
 
 

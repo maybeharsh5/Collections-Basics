@@ -18,7 +18,6 @@ public class FP01Structured{
         System.out.println("---");
         printSquareOfEvenNumbersInListFunctional(list);
 
-
     }
 
 //    private static void printAllNumbersInListStructured(List<Integer> integers) {
@@ -39,8 +38,8 @@ public class FP01Structured{
 //        4
 //         stream of elements . . . . . .
 
-//        integers.stream().forEach(FP01Structured::print);
-//        classname::method
+//         integers.stream().forEach(FP01Structured::print);
+//         classname::method
 //         METHOD REFRENCE
 
         integers.stream().forEach(System.out::println);
